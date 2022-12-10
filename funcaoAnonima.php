@@ -1,8 +1,12 @@
 <?php
 
 // Função Anônima é uma função em que não é definido nome para a mesma
-$multiplicacao = function (float $valor) {
+$multiplicacao = function ($valor) {
     return $valor * 0.1;
 };
 
-echo $multiplicacao (90);
+
+//Pode-se também atribuir a função anônima para outra variável
+$exemplo = $multiplicacao;
+
+echo $exemplo (12);
