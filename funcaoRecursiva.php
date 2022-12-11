@@ -1,7 +1,7 @@
 <?php
 
 //Função Recursiva é quando executamos ela mesma.
-function divisao($numero)
+/*function divisao($numero)
 {
     $result = $numero / 2;
 
@@ -11,4 +11,20 @@ function divisao($numero)
     (round($result) > 0) ? divisao($result) : null;
 }
 
-echo divisao(120);
+echo divisao(120);*/
+
+
+/*function somatoria($numero)
+{
+    echo ($numero == 1) ?  1 :  $numero + somatoria($numero - 1).'<br>';
+}
+
+somatoria(19);*/
+
+
+function fibonachi($numero)
+{
+    echo ($numero == 1) ?  $numero :  fibonachi($numero - 1) + fibonachi($numero - 2).'<br>';
+}
+
+fibonachi(19);
